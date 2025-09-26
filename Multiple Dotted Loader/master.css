@@ -1,0 +1,88 @@
+body{
+    background-color: white;
+}
+.container{
+    display:flex;
+    height:95vh;
+}
+.shape{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border:4px dotted  #0075ff ;
+    translate: -50px;
+    border-top-style:solid;
+    border-right-style: solid;
+    animation-name:circle;
+    animation: circle 2s linear infinite ;
+    position: absolute;
+    top:45%;
+    right:45%;
+    -webkit-animation: circle 2s linear infinite ;
+}
+
+@keyframes circle{
+    
+        from{
+            transform:rotate(0deg);
+            -webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -ms-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+    }
+ 
+to{
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+}
+
+
+}
+
+.shape2{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border:4px dotted  #009688 ;
+    border-top-style:solid;
+    border-bottom-style: solid;
+    margin:auto;
+    animation:circletwo 1s linear infinite;
+    position:absolute;
+    top:48%;
+    left:47%;
+    -webkit-animation:circletwo 2s linear infinite;
+}
+
+
+@keyframes circletwo{
+  
+    from{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+}
+
+to{
+    transform:rotate(-360deg);
+    -webkit-transform:rotate(-360deg);
+    -moz-transform:rotate(-360deg);
+    -ms-transform:rotate(-360deg);
+    -o-transform:rotate(-360deg);
+}
+
+
+}
