@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+div{
+    display:flex;
+    justify-content: center;
+    height:98vh;
+    align-items: center;
+
+}
+p::before{
+    content:'';
+    position: absolute;
+    height:55px;
+    width:50px;
+    background-color: white;
+    top:5px;
+    left:-8px;
+    animation:rect 3s linear infinite;
+    -webkit-animation:rect 4s linear infinite;
+        mix-blend-mode: difference; 
+    
+    
+}
+p{
+    color:white;
+    font-size:50px;
+    padding:0;
+    position: relative;
+    margin:0;
+    text-transform: uppercase;
+}
+@keyframes rect{
+    0% , 100%{
+        left:-8px;
+      
+    }
+
+    50% {
+        left:180px;
+    }
+
+    
+}
