@@ -1,0 +1,56 @@
+form{
+    background-color: #eeeeeed5;
+    width:60%;
+    margin:30px auto;
+}
+
+form div{
+    padding-top:20px;
+    padding-left: 40px;
+}
+form div:last-child{
+    padding-bottom:30px;
+}
+label{
+    position: relative;
+    padding-left:25px;
+}
+
+label::before {
+    content:'';
+    width:16px;
+    height:16px;
+    border:1px solid #0075ff;
+    background-color: #ffffff;
+    position:absolute;
+    left:0px;
+    top:50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+
+input{
+     -webkit-appearance: none;
+    -moz-appearance: none;
+}
+form input[type="radio"]:checked + label::after,form input[type="radio"]:not(:checked):hover + label::after{
+ content:'';
+    width:10px;
+    height:10px;
+    background-color: #0075ff;
+    position:absolute;
+    left:4px;
+    top:4px;
+}
+form input[type="radio"]:not(:checked):hover + label::after
+{
+    opacity:0.2;
+}
+
+input:checked + label{
+    color:#0075ff;  
+}
