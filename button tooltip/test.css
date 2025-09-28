@@ -1,0 +1,69 @@
+a{
+    text-decoration: none;
+    color:black;
+    font-size:20px;
+    background-color: #eee;
+    padding:15px 20px;
+    display:block;
+    width:fit-content;
+    margin: 100px auto;
+    position: relative;
+}
+
+
+a::before{
+    content:'My Awesome Tooltip';
+    width:250px;
+    height:35px;
+    position: absolute;
+    left:-70px;
+    top:-50px;
+    font-size:18px;
+    background-color: rgba(0, 0, 0, 0.911);
+    color:white;
+    text-align:center;
+    line-height:1.7;
+    transition: 5s;
+    -webkit-transition:0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    cursor:default;
+    opacity: 0;
+}
+
+a::after{
+      content:'';
+      height:20px;
+      position: absolute;
+      border:10px solid  ;
+      border-color:black transparent transparent transparent;
+      top: -15px;
+      right:50%;
+      transform: translateX(50%);
+      -webkit-transform: translateX(50%);
+      -moz-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+      -o-transform: translateX(50%);
+      opacity: 0;
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+}
+ 
+a:hover::before , a:hover::after{
+    opacity:1;
+}
+
+[data-position="bottom"]::before{
+    top:auto;
+    bottom:-50px;
+}
+
+[data-position="bottom"]::after{
+    top:auto;
+    bottom:-15px;
+    border-color:transparent transparent black transparent;
+}
