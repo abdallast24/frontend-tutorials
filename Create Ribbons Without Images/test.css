@@ -1,0 +1,41 @@
+div{
+    width:350px;
+    background-color: #eee;
+    margin:20px auto;
+    text-align:center;
+    padding:1px;
+}   
+p{
+    line-height:1.5;
+    padding-bottom:20px;
+}
+.tape{
+    color:white;
+    font-size: 30px;
+    position: relative;
+    width:calc(100% + 20px);
+    background-color: #009688;
+    position: relative;
+    left:-20px;
+    margin-top:30px;
+    padding:10px;
+    
+}
+.tape::before{
+    content:'';
+    border:10px solid;
+    border-color:#009688 #02887c transparent   transparent;
+    position: absolute;
+    left:0px;
+    top:54px;
+}
+
+.tape::after{
+    content:'';
+    border:10px solid;
+    border-color:#009688 transparent transparent #02887c;
+    position: absolute;
+    right:0px;
+    bottom:-20px;
+  
+}
