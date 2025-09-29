@@ -1,0 +1,55 @@
+.menu{
+    padding:1px;
+    width:fit-content;
+    margin:auto;
+    margin-top:50px;
+    position: relative;
+}
+.menu div{
+    width:45px;
+    height:4px;
+    background-color: black;
+    transition:0.4s;
+    -webkit-transition:0.4s;
+    -moz-transition:0.4s;
+    -ms-transition:0.4s;
+    -o-transition:0.4s;
+}
+.menu div:first-child{
+    position: absolute;
+    top:0px;
+}
+.menu div:nth-child(2){
+    position: absolute;
+    top:9px;
+}
+.menu div:last-child{
+    position: absolute;
+    top:18px;
+}
+.menu:hover{
+    cursor:pointer;
+}
+
+.menu:hover div:nth-child(2)
+{
+    opacity:0;
+}
+.menu:hover div:first-child , .menu:hover div:last-child{
+    background-color: red;
+    top:9px;
+}
+.menu:hover div:first-child {
+      transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.menu:hover div:last-child{
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+}
