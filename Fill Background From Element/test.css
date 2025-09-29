@@ -1,0 +1,57 @@
+div{
+ width:350px;
+ margin:30px auto;
+ box-shadow: 0px 0px 10px 0px black;
+ text-align:center;
+ padding:80px 30px 30px 30px;
+ overflow: hidden;
+}
+h2{
+  position: relative;
+  transition:0.6s;
+  -webkit-transition:0.6s;
+  -moz-transition:0.6s;
+  -ms-transition:0.6s;
+  -o-transition:0.6s;
+}
+h2::before{
+    content:'01';
+    position: absolute;
+    top:-70px;
+    left:150px;
+    padding:15px;
+    background-color: red;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition:0.6s;
+    -webkit-transition:0.6s;
+    -moz-transition:0.6s;
+    -ms-transition:0.6s;
+    -o-transition:0.6s;
+}
+p{
+     line-height:1.4;
+     font-size:18px;
+     transition:0.6s;
+     -webkit-transition:0.6s;
+     -moz-transition:0.6s;
+     -ms-transition:0.6s;
+     -o-transition:0.6s;
+     font-weight: bold;
+}
+
+div:hover h2::before{
+    box-shadow:0 0 0 300px  red;
+    color:white;
+
+    z-index:-1;
+
+    
+}
+div:hover h2 ,div:hover p{
+    color:white;
+    
+}
