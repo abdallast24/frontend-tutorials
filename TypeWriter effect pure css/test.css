@@ -1,0 +1,36 @@
+body{
+    background-color:#333333;
+}
+p{
+   width:0;
+   white-space:nowrap;
+   margin:20px auto;
+   color:white;
+   font-size:30px;
+   animation:moving 5s 1s steps(28) infinite alternate-reverse,cursor 0.5s infinite;
+   -webkit-animation:moving 5s 1s steps(28) infinite alternate-reverse,cursor 0.5s infinite;
+
+   overflow: hidden;
+   border-right:2px solid white;
+}
+
+
+@keyframes moving{
+    from{
+        width:0px;
+    }
+    from{
+        width:400px;
+    }
+}
+
+@keyframes cursor{
+    from{
+       border-color:white;
+    }
+    from{
+        border-color:transparent;
+    }
+}
+
+
